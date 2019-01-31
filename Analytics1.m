@@ -130,6 +130,7 @@ eigValFE = eigVals(2);
 eigVecFE = eigVecs(:,2);
 
 fprintf("Fiedler eigenvalue = %f for %s.\n",eigValFE,cityName)
+csvwrite("Fiedler eigenvector for "+cityName,eigVecFE)
 
 Graph = graph(A);
 GraphPlot = plot(Graph);
